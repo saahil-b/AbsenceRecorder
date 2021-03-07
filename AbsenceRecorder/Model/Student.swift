@@ -15,6 +15,6 @@ class Student {
     init(forename: String, surname: String, birthday: Date) {
         self.forename = forename
         self.surname = surname
-        sself.birthday = birthday
+        self.birthday = birthday
     }
 }
