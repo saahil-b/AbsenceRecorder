@@ -11,9 +11,33 @@ class Division {
     let code: String
     
     var students: [Student] = []
+    var absences: [Absence] = []
     
     init(code: String) {
         self.code = code
+    }
+    
+    func getAbsence(for date: Date) -> Absence? {
+        
+        return absences.first {
+            let comparison = Calendar.current.compare($0.takenOn, to: date, toGranularity: .day)
+            
+            return comparison == .orderedSame
+        }
+        
+    }
+    
+    func createAbsenceOrExistingIfAvailable(for date: Date) -> Absence {
+        
+        if let existingAbsence = getAbsence(for: date) {
+            return existingAbsence
+        } else {
+            let absence = Absence(date: date, students: students)
+            absences.append(absence)
+            
+            return absence
+        }
+        
     }
     
     func addStudent(student: Student) {
@@ -37,8 +61,8 @@ class Division {
         
         // loop through no. students- adding students
         
-        for _ in 1...size {
-            division.addStudent(student: Student(forename: "Gareth", surname: "Halpert", birthday: Date() ))
+        for i in 1...size {
+            division.addStudent(student: Student(forename: "S\(i)", surname: "Halpert", birthday: Date() ))
         }
         
         
