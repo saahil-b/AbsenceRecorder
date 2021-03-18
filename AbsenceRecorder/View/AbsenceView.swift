@@ -11,8 +11,6 @@ struct AbsenceView: View {
     
     let absence: Absence
     
-    
-    
     var body: some View {
         List(absence.studentAbsences, id: \.self.student.forename) {
             studentAbsence in

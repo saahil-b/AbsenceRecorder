@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		074C06CE25F582BF00C33236 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C06CD25F582BF00C33236 /* Date.swift */; };
+		0777BA122603F8D60022C03F /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BA112603F8D60022C03F /* FileManager.swift */; };
 		07B0727C25FEA9E400436E56 /* AbsenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0727B25FEA9E400436E56 /* AbsenceItem.swift */; };
 		07B0728125FEC3F300436E56 /* StudentAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0728025FEC3F300436E56 /* StudentAbsence.swift */; };
 		07B072862600088600436E56 /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B072852600088600436E56 /* Absence.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		074C06CD25F582BF00C33236 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		0777BA112603F8D60022C03F /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		07B0727B25FEA9E400436E56 /* AbsenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceItem.swift; sourceTree = "<group>"; };
 		07B0728025FEC3F300436E56 /* StudentAbsence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAbsence.swift; sourceTree = "<group>"; };
 		07B072852600088600436E56 /* Absence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Absence.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				074C06CD25F582BF00C33236 /* Date.swift */,
+				0777BA112603F8D60022C03F /* FileManager.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				07C4BB7825ED714C00A67CC5 /* DivisionsView.swift in Sources */,
 				074C06CE25F582BF00C33236 /* Date.swift in Sources */,
 				07EB712525FACDEA000E2965 /* RootTabView.swift in Sources */,
+				0777BA122603F8D60022C03F /* FileManager.swift in Sources */,
 				07B0728125FEC3F300436E56 /* StudentAbsence.swift in Sources */,
 				07C4BBA625ED7A4600A67CC5 /* Student.swift in Sources */,
 				07B0727C25FEA9E400436E56 /* AbsenceItem.swift in Sources */,

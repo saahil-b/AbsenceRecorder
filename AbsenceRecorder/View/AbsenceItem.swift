@@ -19,12 +19,9 @@ struct AbsenceItem: View {
                 Button("❌", action: {toggleAbsent()})
             } else {
                 Button("✔️", action: {toggleAbsent()})
-                
-                 
             }
 
         }
-        
     }
     
     func toggleAbsent() {

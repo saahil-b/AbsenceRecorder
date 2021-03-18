@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Division {
+class Division: Codable {
     let code: String
     
     var students: [Student] = []
@@ -21,7 +21,6 @@ class Division {
         
         return absences.first {
             let comparison = Calendar.current.compare($0.takenOn, to: date, toGranularity: .day)
-            
             return comparison == .orderedSame
         }
         
@@ -56,6 +55,7 @@ class Division {
     }
     
     #if DEBUG
+    
     static func createDivision(code: String, of size: Int) -> Division {
         let division = Division(code: code)
         
@@ -64,7 +64,6 @@ class Division {
         for i in 1...size {
             division.addStudent(student: Student(forename: "S\(i)", surname: "Halpert", birthday: Date() ))
         }
-        
         
         return division
     }
